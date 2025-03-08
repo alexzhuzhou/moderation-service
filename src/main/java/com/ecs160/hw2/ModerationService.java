@@ -1,8 +1,7 @@
-package com.ecs160.hw3;
+package com.ecs160.hw2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class ModerationService {
