@@ -9,13 +9,13 @@ import java.net.http.HttpResponse;
 import java.util.List;
 
 @RestController
-@RequestMapping("/moderation") // Base URL for all moderation endpoints
+@RequestMapping("/moderation")
 public class ModerationController {
     private static final List<String> BANNED_WORDS = List.of(
             "illegal", "fraud", "scam", "exploit", "dox", "swatting", "hack", "crypto", "bots"
     );
 
-    private static final String HASHTAGGING_SERVICE_URL = "http://localhost:30001/hashtagging/tag";
+    private static final String HASHTAGGING_SERVICE_URL = "http://localhost:30001/hashtag";
     @PostMapping("/check")
     public ModerationResponse moderate(@RequestBody ModerationRequest request) {
         if (request == null || request.getPostContent() == null || request.getPostContent().isBlank()) {
