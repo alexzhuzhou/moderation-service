@@ -62,13 +62,13 @@ public class ModerationController {
     }
 
 
-    static class ModerationRequest {
+    public static class ModerationRequest {
         private String postContent;
         public String getPostContent() { return postContent; }
         public void setPostContent(String postContent) { this.postContent = postContent; }
     }
 
-    static class ModerationResponse {
+    public static class ModerationResponse {
         private String status;
         private String postContent;
 
